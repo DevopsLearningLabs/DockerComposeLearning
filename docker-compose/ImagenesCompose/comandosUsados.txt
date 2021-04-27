@@ -1,0 +1,2 @@
+--Construye una imagen con docker compose apartir de un docker file
+docker-compose build

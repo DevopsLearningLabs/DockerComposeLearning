@@ -1,0 +1,12 @@
+#volumenes nombrados
+version: '3'
+services:
+  web:
+    container_name: nginxtest
+    image: nginx
+    ports:
+      - "8081:80"
+    volumes:
+       - "vol2:/usr/share/nginx/html"
+volumes:
+  vol2:

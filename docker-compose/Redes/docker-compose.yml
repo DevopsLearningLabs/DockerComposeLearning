@@ -1,0 +1,23 @@
+#volumenes host
+version: '3'
+services:
+  web:
+    container_name: nginxtest
+    image: httpd
+    ports:
+      - "8081:80"
+    volumes:
+       - "C:\\Users\\RLAñez\\Desktop\\Git Personal\\docker\\docker-compose\\Volumenes\\html:/usr/share/nginx/html"
+    networks:
+      - net-test
+  web2:
+    container_name: nginxtest2
+    image: httpd
+    ports:
+      - "8082:80"
+    volumes:
+       - "C:\\Users\\RLAñez\\Desktop\\Git Personal\\docker\\docker-compose\\Volumenes\\html:/usr/share/nginx/html"
+    networks:
+      - net-test
+networks:
+  net-test:

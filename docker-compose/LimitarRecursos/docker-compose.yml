@@ -1,0 +1,7 @@
+version: '3'
+services: 
+    web:
+        container_name: nginx1
+        image: nginx:alpine
+        cpuset: "0"
+        mem_limit: 20m
